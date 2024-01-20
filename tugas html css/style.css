@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+  border-radius: 24px;
+  background-color: white;
+  display: flex;
+  border-radius: 24px;
+  white-space: none;
+}
+.gambar-1 {
+  height: 100vh;
+  width: 70vw;
+  background-image: url("./assets/Rectangle\ 2756.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.credit {
+  position: relative;
+  top: -48px;
+  left: 48px;
+  color: white;
+  font-size: max(1vw);
+}
+
+.login-form-container {
+  height: 100vh;
+  width: 456px;
+  min-width: 456px;
+  padding: 48px;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow-y: visible;
+}
+.login-form-content {
+  background-color: rgb(255, 255, 255);
+  width: 360px;
+  height: 100%;
+  min-width: 360px;
+  white-space: nowrap;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  text-indent: 12px;
+}
+.logo-container2 {
+  display: none;
+}
+.greetings {
+  margin-top: 48px;
+  padding-bottom: 24px;
+}
+.btn-login {
+  margin: 32px 0;
+  width: 100%;
+  height: auto;
+  padding: 10px 24px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #8053ff;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  border-style: none;
+
+  transition: all 0.2s;
+}
+.btn-login:hover {
+  background-color: #9470f9;
+  cursor: pointer;
+}
+.btn-login:active {
+  background-color: #b197fa;
+}
+.btn-login-google {
+  width: 100%;
+  height: auto;
+  padding: 10px 24px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #333333;
+  margin: 32px 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  transition: all 0.2s;
+  user-select: none;
+  border-style: none;
+}
+.btn-login-google:hover {
+  cursor: pointer;
+  background-color: #4b4b4b;
+}
+.btn-login-google:active {
+  background-color: #656565;
+}
+p {
+  padding: 8px 0;
+  font-size: 11px;
+  font-weight: 400;
+  margin-left: 16px;
+}
+input {
+  width: 100%;
+  height: 32px;
+  font-family: "Poppins";
+  color: #808080;
+  font-size: 15px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+.google-icon {
+  vertical-align: text-bottom;
+  padding-right: 10px;
+}
+.container-input {
+  padding: 8px 16px;
+  background-color: #80808037;
+  border-radius: 6px;
+}
+.forgot-password {
+  width: 100%;
+  vertical-align: text-bottom;
+  text-align: right;
+  font-size: 12px;
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  top: 3rem;
+  height: 10rem;
+  align-content: end;
+}
+.sign-now {
+  vertical-align: text-bottom;
+  text-align: center;
+  font-size: 12px;
+}
+a:link {
+  text-decoration: none;
+  color: #007aff;
+  transition: all 0.2s;
+}
+a:hover {
+  color: #c2daf4;
+}
+a:visited {
+  color: #8053ff;
+  transition: all 0.2s;
+}
+a:visited:hover {
+  color: #c2daf4;
+}
+.credit a:link {
+  color: white;
+  text-decoration: underline;
+}
+.credit a:visited {
+  color: white;
+}
+.credit a:link:hover {
+  color: white;
+  background-color: #007bff51;
+}
+
+@media only screen and (max-width: 500px) {
+  .gambar-1 {
+    display: none;
+  }
+  .logo-container {
+    display: none;
+  }
+  .logo-container2 {
+    display: block;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    text-indent: 12px;
+    padding: 40px 0;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+  }
+}
